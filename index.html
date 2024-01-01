@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"  type="image/png" sizes="500x500" href="img/icon-152x152.png">
+    <title>Taufiq Aziz - Webpage</title>
+    <meta name="title" content="Taufiq Aziz - Webpage">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+
+    <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/service-worker.js', { scope: '/' })
+            .then(function (registration) {
+              console.log('Service Worker registered with scope:', registration.scope);
+            })
+            .catch(function (error) {
+              console.error('Service Worker registration failed:', error);
+            });
+        }
+    </script>
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="img/icon-72x72.png" />
+    <link rel="apple-touch-icon" href="img/icon-96x96.png" />
+    <link rel="apple-touch-icon" href="img/icon-128x128.png" />
+    <link rel="apple-touch-icon" href="img/icon-144x144.png" />
+    <link rel="apple-touch-icon" href="img/icon-152x152.png" />
+    <link rel="apple-touch-icon" href="img/icon-192x192.png" />
+    <link rel="apple-touch-icon" href="img/icon-384x384.png" />
+    <link rel="apple-touch-icon" href="img/icon-512x512.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#7e3af2" />
+    <meta name="theme-color" content="#7e3af2" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" style="background-color: #7e3af2;">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" fill="#fff">
+                        <path stroke="rgba(255, 255, 255, 1)" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+                            d="M4 7h22M4 15h22m-22 8h22"></path>
+                    </svg>
+                    <span class="navbar-text" style="font-family: 'IBM Plex Mono', monospace; color: white;">PWA App Shell</span>
+                </button>
+                    
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#page1">Device Token</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#page2">Comment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#page3">Portofolio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+    
+
+    <div class="container-fluid">
+        <main id="app-shell">
+            <!-- Content will be dynamically loaded here -->
+        </main>
+    </div>
+    <!-- <footer>
+        <p>&copy; 2023 PWA App Shell</p>
+    </footer> -->
+
+    <footer class="mt-auto">
+        <div class="text-center">
+            <p class="footer-title">&copy; 2023 PWA App Shell</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    
+
+</body>
+</html>
+
+
